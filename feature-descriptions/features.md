@@ -40,3 +40,21 @@ So that they will use the vending machine again<br>
 
 When a product is selected that costs less than the amount of money in the machine, then the remaining amount is placed in the coin return.
 
+#Accept dollar
+<i> As a vendor
+<br>I want my machine to take one dollar in cash
+<br>So that I sell with more options
+</i>
+<br><br>The machine will accept a new type of "money" which is 1 Dollar in paper. (Represented with the symbol DO)
+
+#Exact Change Only
+<i>As a customer
+<br>I want to be told when exact change is required
+<br>So that I can determine if I can buy something with the money I have before inserting it
+</i><br><br>When the machine is not able to make change with the money in the machine for any of the items that it sells, it will display EXACT CHANGE ONLY.
+
+#Sold Out products
+<i>As a customer
+<br>I want to be told when the item I have selected is not available
+<br>So that I can select another item
+</i><br><br>When the item selected by the customer is out of stock, the machine displays SOLD OUT. If the display is checked again, it will display the amount of money remaining in the machine or INSERT COIN if there is no money in the machine.
