@@ -33,7 +33,9 @@ The vending machine accepts money in the form of some coins: nickels ($0.05), di
 There are several features and their following inputs and outputs examples. 
 If you want to develop a learning program based on those features please follow. 
 
-[Set 1: Modelling your Vending Machine](/feature-descriptions/features-set1.md) 
+[Set 1: Modelling your Vending Machine](/feature-descriptions/features-set1.md)
+[Set 2: Add behaviours and setup the Vending Machine](/feature-descriptions/features-set2.md)
+[Set 3: Handle change and sold out products](/feature-descriptions/features-set3.md)
 
 ## Vending Machine: Example Input and Output
 #### Buy Cola with exact change
