@@ -1,4 +1,4 @@
-# Accept Coins
+# 1. Accept Coins
 <i>
 As a vendor<br>
 I want a vending machine that accepts coins<br>
@@ -8,7 +8,7 @@ So that I can collect money from the customer<br>
 
 The vending machine will accept valid coins (nickels, dimes, and quarters) and reject invalid ones (pennies). When a valid coin is inserted the amount of the coin will be added to the current amount and the display will be updated. When there are no coins inserted, the machine displays INSERT COIN. Rejected coins are placed in the coin return.
 
-# Select Product
+# 2. Select Product
 <i>
 As a vendor<br>
 I want customers to select products<br>
@@ -16,10 +16,14 @@ So that I can give them an incentive to put money in the machine<br>
 </i>
 <br>
 
-There are three products: cola for $1.00, chips for $0.50, and candy for $0.65. When the respective button is pressed and enough money has been inserted, the product is dispensed and the machine displays THANK YOU. When the display is checked again, it will display INSERT COIN and the current amount will be set to $0.00. If there is not enough money inserted then the machine displays PRICE and the price of the item and subsequent checks of the display will display either INSERT COIN or the current amount as appropriate.
+There are three products: cola for $1.00, chips for $0.50, and candy for $0.65. 
+When the respective button is pressed and enough money has been inserted, 
+the product is dispensed and the machine displays THANK YOU. 
+When the display is checked again, it will display INSERT COIN and the current amount will be set to $0.00. 
+If there is not enough money inserted then the machine displays PRICE and the price of the item and subsequent checks of the display will display either INSERT COIN or the current amount as appropriate.
 
 
-# Return Coins
+# 3. Return Coins
 <i>
 As a customer<br>
 I want to have my money returned<br>
@@ -30,7 +34,7 @@ So that I can change my mind about buying stuff from the vending machine<br>
 There are three products: cola for $1.00, chips for $0.50, and candy for $0.65. When the respective button is pressed and enough money has been inserted, the product is dispensed and the machine displays THANK YOU. When the display is checked again, it will display INSERT COIN and the current amount will be set to $0.00. If there is not enough money inserted then the machine displays PRICE and the price of the item and subsequent checks of the display will display either INSERT COIN or the current amount as appropriate.
 
 
-# Make Change
+# 4. Make Change
 <i>
 As a vendor<br>
 I want customers to receive correct change<br>
@@ -40,20 +44,36 @@ So that they will use the vending machine again<br>
 
 When a product is selected that costs less than the amount of money in the machine, then the remaining amount is placed in the coin return.
 
-# Accept dollar
+# 5. Accept dollar
 <i> As a vendor
 <br>I want my machine to take one dollar in cash
 <br>So that I sell with more options
 </i>
 <br><br>The machine will accept a new type of "money" which is 1 Dollar in paper. (Represented with the symbol DO)
 
-# Exact Change Only
+# 6. Setup Money
+<i>As a vendor
+<br>I want to setup the current money amount
+<br>So that I sell correctly
+</i>
+<br><br>When the vendor starts the day, the first thing they want to do is to setup the correct amount of money in the machine. That amount of money will be the base for all currency transactions in the machine. The operation for setting up the amount must be the first thing displayed on the machine when it is turned on. It is also an option that the vendor can access throughout the day. If the machine is turned down, then the amount is lost.
+
+
+#  7. Setup products
+<i>As a vendor
+<br>I want to setup the current products amount
+<br>So that I sell correctly
+</i><br><br>When the vendor starts the day, after they setup the correct amount of money in the machine, they will setup the amount of products. That amount of products will be the base for all transactions in the machine. The operation for setting up the amount must be displayed on the machine when it is turned on. It is also an option that the vendor can access throughout the day. If the machine is turned down, then the amount is lost. 
+
+
+# 8. Exact Change Only
 <i>As a customer
 <br>I want to be told when exact change is required
 <br>So that I can determine if I can buy something with the money I have before inserting it
 </i><br><br>When the machine is not able to make change with the money in the machine for any of the items that it sells, it will display EXACT CHANGE ONLY.
 
-# Sold Out products
+
+# 9. Sold Out products
 <i>As a customer
 <br>I want to be told when the item I have selected is not available
 <br>So that I can select another item

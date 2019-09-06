@@ -7,7 +7,7 @@ https://github.com/guyroyse/vending-machine-kata
 
 
 
-##  Vending Machine Description
+## Vending Machine Description
 The goal of this program is to model a vending machine and the state it must maintain during it's operation. How exactly the actions on the machine are driven is left intentionally vague and is up to the implementor.
 The machine works like all vending machines: it takes money then gives you items. 
 
@@ -28,22 +28,60 @@ The vending machine accepts money in the form of some coins: nickels ($0.05), di
 * available change - # of nickels, dimes and quarters available
 * currently inserted money
 
+
+## Features
+There are several features and their following inputs and outputs examples. 
+If you want to develop a learning program based on those features please follow. 
+
+[Set 1: Modelling your Vending Machine](/feature-descriptions/features-set1.md) 
+
 ## Vending Machine: Example Input and Output
-#### Example 1: Buy Cola with exact change
+#### Buy Cola with exact change
 ```
 $ INSERT COIN AND PRODUCT
-> Q, Q, Q, Q GET-COLA
+> Q, Q, Q, Q, GET-COLA
 COLA
+
+$ INSERT COIN AND PRODUCT
 ```
 
-#### Example 2: Start adding change but hit coin return to get change back
+#### Start adding change but hit coin return to get change back
 ```
 $ INSERT COIN AND PRODUCT
 > Q, Q, COIN-RETURN
 Q, Q
 ```
 
-#### Example 4: Setting up money in the machine when it is turned on in the first time
+#### Buy product without enough money and then insert money after
+```
+$ INSERT COIN AND PRODUCT
+> Q, Q, Q, GET-COLA
+PRICE: 1.00, BALANCE: 0.75
+$ INSERT COIN OR HIT COIN-RETURN 
+> Q, GET-COLA
+COLA
+```
+
+#### Buy product without enough money and then give up on purchase
+```
+$ INSERT COIN AND PRODUCT
+> Q, Q, Q, GET-COLA
+PRICE: 1.00, BALANCE: 0.75
+$ INSERT COIN OR HIT COIN-RETURN 
+> Q, Q, COIN-RETURN
+Q, Q, Q, Q, Q
+```
+#### Buy product without enough money and then add more than necessary
+```
+$ INSERT COIN AND PRODUCT
+> Q, Q, Q, GET-COLA
+PRICE: 1.00, BALANCE: 0.75
+$ INSERT COIN OR HIT COIN-RETURN 
+> D, D, D, GET-COLA
+N, COLA
+```
+
+#### Setting up money in the machine when it is turned on in the first time
 ```
 $ CURRENT BALANCE IS 0. SETUP IS REQUIRED
 > SETUP-MONEY: DO, Q, DO, DO ,Q, Q, D, D, N
@@ -56,7 +94,7 @@ Current products are: 4 CANDY, 3 CHIPS, 2 COLA
 $ INSERT COIN AND PRODUCT
 ```
 
-#### Example 5: Exact change only
+#### Exact change only
 ```
 $ EXACT CHANGE ONLY. INSERT COIN AND PRODUCT: 
 > Q, Q, GET-CHIPS
@@ -70,7 +108,7 @@ DO
 $ EXACT CHANGE ONLY. INSERT COIN AND PRODUCT:
 ```
 
-#### Example 6: SOLD OUT product
+#### SOLD OUT product
 ```
 $ INSERT COIN AND PRODUCT: 
 > Q, Q, GET-CHIPS
