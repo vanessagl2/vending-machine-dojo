@@ -33,56 +33,11 @@ The vending machine accepts money in the form of some coins: nickels ($0.05), di
 There are several features and their following inputs and outputs examples. 
 If you want to develop a learning program based on those features please follow. 
 
-[Set 1: Modelling your Vending Machine](/feature-descriptions/features-set1.md)
-[Set 2: Add behaviours and setup the Vending Machine](/feature-descriptions/features-set2.md)
-[Set 3: Handle change and sold out products](/feature-descriptions/features-set3.md)
+* [Set 1: Modelling your Vending Machine](/feature-descriptions/features-set1.md)
+* [Set 2: Add behaviours and setup the Vending Machine](/feature-descriptions/features-set2.md)
+* [Set 3: Handle change and sold out products](/feature-descriptions/features-set3.md)
 
 ## Vending Machine: Example Input and Output
-#### Buy Cola with exact change
-```
-$ INSERT COIN AND PRODUCT
-> Q, Q, Q, Q, GET-COLA
-COLA
-
-$ INSERT COIN AND PRODUCT
-```
-
-#### Start adding change but hit coin return to get change back
-```
-$ INSERT COIN AND PRODUCT
-> Q, Q, COIN-RETURN
-Q, Q
-```
-
-#### Buy product without enough money and then insert money after
-```
-$ INSERT COIN AND PRODUCT
-> Q, Q, Q, GET-COLA
-PRICE: 1.00, BALANCE: 0.75
-$ INSERT COIN OR HIT COIN-RETURN 
-> Q, GET-COLA
-COLA
-```
-
-#### Buy product without enough money and then give up on purchase
-```
-$ INSERT COIN AND PRODUCT
-> Q, Q, Q, GET-COLA
-PRICE: 1.00, BALANCE: 0.75
-$ INSERT COIN OR HIT COIN-RETURN 
-> Q, Q, COIN-RETURN
-Q, Q, Q, Q, Q
-```
-#### Buy product without enough money and then add more than necessary
-```
-$ INSERT COIN AND PRODUCT
-> Q, Q, Q, GET-COLA
-PRICE: 1.00, BALANCE: 0.75
-$ INSERT COIN OR HIT COIN-RETURN 
-> D, D, D, GET-COLA
-N, COLA
-```
-
 #### Setting up money in the machine when it is turned on in the first time
 ```
 $ CURRENT BALANCE IS 0. SETUP IS REQUIRED
