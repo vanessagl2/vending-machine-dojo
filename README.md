@@ -38,7 +38,7 @@ If you want to develop a learning program based on those features please follow.
 * [Set 3: Handle change and sold out products](/feature-descriptions/features-set3.md)
 
 ## Vending Machine: Example Input and Output
-#### Setting up money in the machine when it is turned on in the first time
+#### Setting up machine when it is turned on in the first time
 ```
 $ CURRENT BALANCE IS 0. SETUP IS REQUIRED
 > SETUP-MONEY: DO, Q, DO, DO ,Q, Q, D, D, N

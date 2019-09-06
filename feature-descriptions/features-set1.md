@@ -35,22 +35,6 @@ There are three products: cola for $1.00, chips for $0.50, and candy for $0.65. 
 
 
 ## Vending Machine: Example Input and Output
-#### Buy Cola with exact change
-```
-$ INSERT COIN AND PRODUCT
-> Q, Q, Q, Q, GET-COLA
-COLA
-
-$ INSERT COIN AND PRODUCT
-```
-
-#### Start adding change but hit coin return to get change back
-```
-$ INSERT COIN AND PRODUCT
-> Q, Q, COIN-RETURN
-Q, Q
-```
-
 #### Buy product without enough money and then insert money after
 ```
 $ INSERT COIN AND PRODUCT
