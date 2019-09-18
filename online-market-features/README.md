@@ -15,6 +15,7 @@ Online Market is a remote API that manages a real database that contains product
 ### Technical Stack
 * Java 8
 * [Spring Boot](https://spring.io/guides): Many guides on building restful services are provided there 
+* [Spring Start](https://start.spring.io/): Spring Initializer tool
 * RESTful communication with JSON resources
 * Database: Local database. You can choose any type for data storage (arrays, lists, files, etc) - for now :)
 
