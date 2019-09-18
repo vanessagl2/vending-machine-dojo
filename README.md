@@ -1,10 +1,10 @@
 # vending-machine-dojo
-This is a simple starter project for the Vending Machine Dojo. 
-This is based on the Original Kata available at: 
+
+This is a DOJO based on the Original Kata available at: 
 
 https://github.com/guyroyse/vending-machine-kata
 
-
+This codebase contains an extension for that DOJO
 
 
 ## Vending Machine Description
@@ -36,3 +36,5 @@ If you want to develop a learning program based on those features please follow.
 * [Set 1: Modelling your Vending Machine](/vending-machine-features/features-set1.md)
 * [Set 2: Add behaviours and setup the Vending Machine](/vending-machine-features/features-set2.md)
 * [Set 3: Handle change and sold out products](/vending-machine-features/features-set3.md)
+* [Set 4: Building an API to serve your Vending Machine](/vending-machine-features/features-set4.md)
+

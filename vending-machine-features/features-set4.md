@@ -20,5 +20,5 @@ Online Market is a separate service you will build as part of this DOJO.
 
 <br>If you don't want to practice Spring Boot, consuming and/or building a Restful Service then you will not need to implement this part of the DOJO.
 
-Your requirements will be based defined on the next set of features. 
+Your requirements will be based defined on the next [set of features](../online-market-features). 
 
