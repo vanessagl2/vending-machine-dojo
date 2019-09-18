@@ -2,9 +2,9 @@
 
 It is expected that you already implemented all features described in the previous feature files. 
 
-* [Set 1: Modelling your Vending Machine](/feature-descriptions/features-set1.md)
-* [Set 2: Add behaviours and setup the Vending Machine](/feature-descriptions/features-set2.md)
-* [Set 3: Handle change and sold out products](/feature-descriptions/features-set3.md)
+* [Set 1: Modelling your Vending Machine](/vending-machine-features/features-set1.md)
+* [Set 2: Add behaviours and setup the Vending Machine](/vending-machine-features/features-set2.md)
+* [Set 3: Handle change and sold out products](/vending-machine-features/features-set3.md)
 
 At this point you have built the setup features for your vending machine. 
 If you haven't done that yet, please go back to those features and complete them.  
