@@ -24,3 +24,6 @@ Online Market is a remote API that manages a real database that contains product
 * Gradle to manage your dependencies
 
 There is not a requirement for persisting data after the application is OFF.
+
+## Features
+* [Set 1: Create and Retrieve Products](features-set1.md)
